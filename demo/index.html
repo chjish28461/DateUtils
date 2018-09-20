@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>示例</title>
+</head>
+<script src="DateUtils.js"></script>
+<body>
+  <script>
+      let nowDate = new DateUtils();
+      let date1 = new DateUtils('2018-12-01');
+      let date2 = new DateUtils('2018/12/01');
+      console.log(nowDate.format('yyyy-mm-dd HH:MM:SS'));
+      console.log(nowDate.getPreMonthDay());
+      console.log(date1.format('yyyy-mm-dd HH:MM:SS W Q'));
+      console.log(date1.getPreMonthDay());
+      console.log(date2.format('HH:MM:SS W Q'));
+      console.log(date2.getPreMonthDay());
+  </script>
+</body>
+</html>
